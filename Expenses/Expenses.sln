@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31112.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Expenses", "Expenses\Expenses.csproj", "{9CF407CC-2B29-46A2-BEBF-2DA63E298293}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Expenses.DataAccess", "Expenses.DataAccess\Expenses.DataAccess.csproj", "{B3180331-4673-43E1-9EED-DF0AC595847B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{9CF407CC-2B29-46A2-BEBF-2DA63E298293}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CF407CC-2B29-46A2-BEBF-2DA63E298293}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CF407CC-2B29-46A2-BEBF-2DA63E298293}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3180331-4673-43E1-9EED-DF0AC595847B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3180331-4673-43E1-9EED-DF0AC595847B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3180331-4673-43E1-9EED-DF0AC595847B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3180331-4673-43E1-9EED-DF0AC595847B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
