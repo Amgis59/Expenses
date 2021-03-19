@@ -10,3 +10,6 @@ C:\GitHubRep\Expenses\Expenses\Expenses.DataAccess\obj\Debug\net5.0\Expenses.Dat
 C:\GitHubRep\Expenses\Expenses\Expenses.DataAccess\obj\Debug\net5.0\Expenses.DataAccess.dll
 C:\GitHubRep\Expenses\Expenses\Expenses.DataAccess\obj\Debug\net5.0\ref\Expenses.DataAccess.dll
 C:\GitHubRep\Expenses\Expenses\Expenses.DataAccess\obj\Debug\net5.0\Expenses.DataAccess.pdb
+C:\GitHubRep\Expenses\Expenses\Expenses.DataAccess\bin\Debug\net5.0\Expenses.DataAccess.runtimeconfig.json
+C:\GitHubRep\Expenses\Expenses\Expenses.DataAccess\bin\Debug\net5.0\Expenses.DataAccess.runtimeconfig.dev.json
+C:\GitHubRep\Expenses\Expenses\Expenses.DataAccess\obj\Debug\net5.0\Expenses.DataAccess.genruntimeconfig.cache

@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Expenses.DataAccess.Entities
 {
-    class Account
+    public class Account
     {
+        public int Id { get; set; }
+        public double Balance { get; set; }
     }
 }
