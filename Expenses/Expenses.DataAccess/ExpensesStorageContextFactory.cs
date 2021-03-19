@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Expenses.DataAccess
 {
-    class ExpensesStorageContextFactory : IDesignTimeDbContextFactory<ExpensesStorageContext>
+    public class ExpensesStorageContextFactory : IDesignTimeDbContextFactory<ExpensesStorageContext>
     {
         public ExpensesStorageContext CreateDbContext(string[] args)
         {

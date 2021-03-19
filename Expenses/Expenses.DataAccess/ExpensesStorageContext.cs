@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Expenses.DataAccess
 {
-    class ExpensesStorageContext : DbContext
+    public class ExpensesStorageContext : DbContext
     {
         public ExpensesStorageContext(DbContextOptions<ExpensesStorageContext> opt) : base(opt)
         {
