@@ -3,14 +3,16 @@ using Expenses.DataAccess;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Expenses.DataAccess.Migrations
 {
     [DbContext(typeof(ExpensesStorageContext))]
-    partial class ExpensesStorageContextModelSnapshot : ModelSnapshot
+    [Migration("20210321012259_AddAims")]
+    partial class AddAims
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -74,28 +76,6 @@ namespace Expenses.DataAccess.Migrations
                     b.ToTable("Expenses");
                 });
 
-            modelBuilder.Entity("Expenses.DataAccess.Entities.ExpenseCategory", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int>("ExpenseId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Name")
-                        .HasMaxLength(30)
-                        .HasColumnType("nvarchar(30)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ExpenseId")
-                        .IsUnique();
-
-                    b.ToTable("Categories");
-                });
-
             modelBuilder.Entity("Expenses.DataAccess.Entities.Income", b =>
                 {
                     b.Property<int>("Id")
@@ -138,17 +118,6 @@ namespace Expenses.DataAccess.Migrations
                     b.Navigation("Account");
                 });
 
-            modelBuilder.Entity("Expenses.DataAccess.Entities.ExpenseCategory", b =>
-                {
-                    b.HasOne("Expenses.DataAccess.Entities.Expense", "Expense")
-                        .WithOne("Category")
-                        .HasForeignKey("Expenses.DataAccess.Entities.ExpenseCategory", "ExpenseId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Expense");
-                });
-
             modelBuilder.Entity("Expenses.DataAccess.Entities.Income", b =>
                 {
                     b.HasOne("Expenses.DataAccess.Entities.Account", "Account")
@@ -167,11 +136,6 @@ namespace Expenses.DataAccess.Migrations
                     b.Navigation("Expenses");
 
                     b.Navigation("Incomes");
-                });
-
-            modelBuilder.Entity("Expenses.DataAccess.Entities.Expense", b =>
-                {
-                    b.Navigation("Category");
                 });
 #pragma warning restore 612, 618
         }

@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 
 namespace Expenses.DataAccess.Entities
 {
-    public class Account
+    public class Account : EntityBase
     {
-        public int Id { get; set; }
         public double Balance { get; set; }
+
+        public List<Expense> Expenses { get; set; }
+        public List<Income> Incomes { get; set; }
+        public Aim Aim { get; set; }
     }
 }

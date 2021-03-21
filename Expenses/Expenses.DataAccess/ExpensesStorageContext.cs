@@ -15,5 +15,9 @@ namespace Expenses.DataAccess
 
         }
         public DbSet<Account> Accounts { get; set; }
+        public DbSet<Expense> Expenses { get; set; }
+        public DbSet<Income> Incomes { get; set; }
+        public DbSet<Aim> Aims { get; set; }
+        public DbSet<ExpenseCategory> Categories { get; set; }
     }
 }
