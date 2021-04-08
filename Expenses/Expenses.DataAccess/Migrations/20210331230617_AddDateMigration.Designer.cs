@@ -4,14 +4,16 @@ using Expenses.DataAccess;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Expenses.DataAccess.Migrations
 {
     [DbContext(typeof(ExpensesStorageContext))]
-    partial class ExpensesStorageContextModelSnapshot : ModelSnapshot
+    [Migration("20210331230617_AddDateMigration")]
+    partial class AddDateMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

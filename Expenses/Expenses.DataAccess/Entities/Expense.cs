@@ -12,5 +12,6 @@ namespace Expenses.DataAccess.Entities
         public Account Account { get; set; }
         public ExpenseCategory Category { get; set; }
         public double Value { get; set; }
+        public DateTime Date { get; set; }
     }
 }
