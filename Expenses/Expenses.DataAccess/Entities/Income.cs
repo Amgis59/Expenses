@@ -10,6 +10,7 @@ namespace Expenses.DataAccess.Entities
     {
         public int AccountId { get; set; }
         public Account Account { get; set; }
+        public DateTime Date { get; set; }
         public double Value { get; set; }
     }
 }

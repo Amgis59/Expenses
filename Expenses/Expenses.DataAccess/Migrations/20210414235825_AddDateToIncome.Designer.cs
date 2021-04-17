@@ -4,14 +4,16 @@ using Expenses.DataAccess;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Expenses.DataAccess.Migrations
 {
     [DbContext(typeof(ExpensesStorageContext))]
-    partial class ExpensesStorageContextModelSnapshot : ModelSnapshot
+    [Migration("20210414235825_AddDateToIncome")]
+    partial class AddDateToIncome
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -109,9 +111,6 @@ namespace Expenses.DataAccess.Migrations
 
                     b.Property<int>("AccountId")
                         .HasColumnType("int");
-
-                    b.Property<DateTime>("Date")
-                        .HasColumnType("datetime2");
 
                     b.Property<double>("Value")
                         .HasColumnType("float");
